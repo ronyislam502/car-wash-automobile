@@ -1,8 +1,19 @@
 const Register = () => {
   return (
-    <div className="hero bg-base-200 min-h-screen">
-      <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+    <div className="hero">
+      <div className="card w-2/4  shadow-xl">
         <form className="card-body">
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text">Name</span>
+            </label>
+            <input
+              type="text"
+              placeholder="name"
+              className="input input-bordered input-accent"
+              required
+            />
+          </div>
           <div className="form-control">
             <label className="label">
               <span className="label-text">Email</span>
@@ -10,7 +21,29 @@ const Register = () => {
             <input
               type="email"
               placeholder="email"
-              className="input input-bordered"
+              className="input input-bordered input-accent"
+              required
+            />
+          </div>
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text">Phone</span>
+            </label>
+            <input
+              type="text"
+              placeholder="phone"
+              className="input input-bordered input-accent"
+              required
+            />
+          </div>
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text">Address</span>
+            </label>
+            <input
+              type="text"
+              placeholder="address"
+              className="input input-bordered input-accent"
               required
             />
           </div>
@@ -21,14 +54,9 @@ const Register = () => {
             <input
               type="password"
               placeholder="password"
-              className="input input-bordered"
+              className="input input-bordered input-accent"
               required
             />
-            <label className="label">
-              <a href="#" className="label-text-alt link link-hover">
-                Forgot password?
-              </a>
-            </label>
           </div>
           <div className="form-control mt-6">
             <button className="btn btn-primary">Login</button>
